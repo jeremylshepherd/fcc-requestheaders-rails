@@ -4,7 +4,8 @@ class HeadersController < ApplicationController
         user_agent = request.user_agent
         ip = request.ip
         language = request.env['HTTP_ACCEPT_LANGUAGE']
-        hash = {:language => language, :software => software_data(user_agent), :ip => ip}
+        lang = language.split(';')
+        hash = {:language => lang[0], :software => software_data(user_agent), :ip => ip}
         render json: hash, status: 200
     end
     
