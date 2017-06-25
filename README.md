@@ -4,7 +4,7 @@
 
 ### Example usage:
 
-`https://jeremylshepherd-headers-rails.herokuapp.com/api/whoami`
+`https://jeremylshepherd-headers-rails.herokuapp.com/headers/whoami`
 
 ### Example output:
 
