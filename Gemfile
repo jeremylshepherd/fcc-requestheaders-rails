@@ -2,10 +2,10 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.5'
+gem 'rails', '4.2.7.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: :development # Added development group.
-gem 'pg', group: :production # Added postgres and made it production only.
+gem 'pg', '~> 0.21.0', group: :production # Added postgres and made it production only.
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -16,8 +16,9 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 #Update potential vulnerabilities
-gem 'loofah', '~> 2.2.1'
+gem 'loofah', '~> 2.2.3'
 gem 'nokogiri', '~> 1.8.1'
+gem 'sprockets', '~>3.7.2'
 
 gem 'bootstrap-sass', '~> 3.3.6'
 
